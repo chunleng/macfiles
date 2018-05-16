@@ -44,7 +44,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture 
 
 # Change sensitivity of the trackpad
 defaults write -g com.apple.trackpad.scrolling -float 2.0
-defaults write -g com.apple.trackpad.scaling -float 5
+defaults write -g com.apple.trackpad.scaling -float 4.0
 
 # Toggle between all and textbox focus in dialog (Equals to ctrl-F7)
 defaults write -g AppleKeyboardUIMode -int 2
