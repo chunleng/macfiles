@@ -75,3 +75,11 @@ defaults write com.apple.menuextra.battery ShowPercent -string YES
 
 # Ask for password straight away dimming the screen
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+
+############################################################################
+#                                 Hotkey                                   #
+############################################################################
+
+# Change switch between windows of same app to command+$
+# defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 27 "{enabled=1;value={parameters=(36,50,1048576);type=standard;};}"
