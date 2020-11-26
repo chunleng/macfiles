@@ -83,3 +83,10 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Change switch between windows of same app to command+$
 # defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 27 "{enabled=1;value={parameters=(36,50,1048576);type=standard;};}"
+
+############################################################################
+#                                Keyboard                                  #
+############################################################################
+
+# Programmer Dvorak
+# defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '{InputSourceKind="Keyboard Layout";"KeyboardLayout ID"=6454;"KeyboardLayout Name"="Programmer Dvorak";}'
