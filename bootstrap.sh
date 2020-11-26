@@ -70,7 +70,7 @@ defaults write com.apple.dock autohide -int 1
 defaults write com.apple.menuextra.battery ShowPercent -string YES
 
 ############################################################################
-#                               ScreenSover                                #
+#                               ScreenSaver                                #
 ############################################################################
 
 # Ask for password straight away dimming the screen
