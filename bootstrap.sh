@@ -90,3 +90,11 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Programmer Dvorak
 # defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '{InputSourceKind="Keyboard Layout";"KeyboardLayout ID"=6454;"KeyboardLayout Name"="Programmer Dvorak";}'
+
+############################################################################
+#                                Windows                                   #
+############################################################################
+
+# Dark Mode
+defaults write "Apple Global Domain" AppleInterfaceStyle -string Dark
+defaults write "Apple Global Domain" AppleInterfaceStyleSwitchesAutomatically -int 0
