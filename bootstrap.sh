@@ -15,10 +15,13 @@ defaults write -g InitialKeyRepeat -int 12
 defaults write -g KeyRepeat -int 1
 
 # Turn off autocorrect
-defaults write -g WebAutomaticSpellingCorrectionEnabled -int 0;
+defaults write "Apple Global Domain" NSAutomaticCapitalizationEnabled -int 0;
+defaults write "Apple Global Domain" NSAutomaticSpellingCorrectionEnabled -int 0;
+defaults write "Apple Global Domain" NSAutomaticTextCompletionEnabled -int 0;
+defaults write "Apple Global Domain" WebAutomaticSpellingCorrectionEnabled -int 0;
 
 # Hold function for F1 to F12 key
-defaults write -g com.apple.keyboard.fnState -int 0
+defaults write com.apple.keyboard.fnState -int 1
 
 ############################################################################
 #                                 Trackpad                                 #
