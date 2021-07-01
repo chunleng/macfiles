@@ -34,7 +34,7 @@ defaults write com.apple.touchbar.agent PresentationModeGlobal -string functionK
 # Tap to click, instead of press
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
 
-# Make make clicking silent
+# Make clicking silent
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 
 # Draw using 3 fingers
