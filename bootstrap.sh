@@ -21,7 +21,7 @@ defaults write "Apple Global Domain" NSAutomaticTextCompletionEnabled -int 0;
 defaults write "Apple Global Domain" WebAutomaticSpellingCorrectionEnabled -int 0;
 
 # Default to use F1 to F12 key without holding functions
-defaults write com.apple.keyboard.fnState -int 1
+defaults write "Apple Global Domain" com.apple.keyboard.fnState -int 1
 
 # Functions setting for touch bar
 defaults write com.apple.touchbar.agent PresentationModeFnModes -dict-add functionKeys 'fullControlStrip'
