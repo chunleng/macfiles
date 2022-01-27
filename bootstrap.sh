@@ -2,8 +2,6 @@
 
 set eu
 
-APP_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"
-
 ############################################################################
 #                                 Keyboard                                 #
 ############################################################################
@@ -69,12 +67,19 @@ defaults write com.apple.dock tilesize -int 35
 # Hide after certain time
 defaults write com.apple.dock autohide -int 1
 
+# Disable hot corners
+defaults write com.apple.dock "wvous-br-corner" -int 1
+defaults write com.apple.dock "wvous-br-modifier" -int 1048576
+
 ############################################################################
 #                             Navigation Menu                              #
 ############################################################################
 
 # Show the percentage figure in battery
-defaults write com.apple.menuextra.battery ShowPercent -string YES
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
+
+# Show bluetooth
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 18
 
 ############################################################################
 #                               ScreenSaver                                #
@@ -83,21 +88,6 @@ defaults write com.apple.menuextra.battery ShowPercent -string YES
 # Ask for password straight away dimming the screen
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-
-############################################################################
-#                                 Hotkey                                   #
-############################################################################
-
-# Change switch between windows of same app to command+$
-# defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 27 "{enabled=1;value={parameters=(36,50,1048576);type=standard;};}"
-
-############################################################################
-#                                Keyboard                                  #
-############################################################################
-
-# Programmer Dvorak
-# defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '{InputSourceKind="Keyboard Layout";"KeyboardLayout ID"=6454;"KeyboardLayout Name"="Programmer Dvorak";}'
-
 ############################################################################
 #                                Windows                                   #
 ############################################################################
@@ -105,3 +95,10 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Dark Mode
 defaults write "Apple Global Domain" AppleInterfaceStyle -string Dark
 defaults write "Apple Global Domain" AppleInterfaceStyleSwitchesAutomatically -int 0
+
+
+############################################################################
+#                                Restart                                   #
+############################################################################
+killall SystemUIServer
+killall Dock
