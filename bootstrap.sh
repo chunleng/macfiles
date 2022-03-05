@@ -25,6 +25,9 @@ defaults write "Apple Global Domain" com.apple.keyboard.fnState -int 1
 defaults write com.apple.touchbar.agent PresentationModeFnModes -dict-add functionKeys 'fullControlStrip'
 defaults write com.apple.touchbar.agent PresentationModeGlobal -string functionKeys
 
+# Disable Fn Key Press (Hold still valid)
+defaults write com.apple.HIToolbox AppleFnUsageType -int 0
+
 ############################################################################
 #                                 Trackpad                                 #
 ############################################################################
