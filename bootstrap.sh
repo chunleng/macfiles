@@ -29,7 +29,7 @@ defaults write com.apple.touchbar.agent PresentationModeGlobal -string functionK
 defaults write com.apple.HIToolbox AppleFnUsageType -int 0
 
 ############################################################################
-#                                 Trackpad                                 #
+#                           Trackpad and Mouse                             #
 ############################################################################
 
 # Tap to click, instead of press
@@ -56,6 +56,10 @@ defaults write -g com.apple.trackpad.scaling -float 4.0
 
 # Toggle between all and textbox focus in dialog (Equals to ctrl-F7)
 defaults write -g AppleKeyboardUIMode -int 2
+
+# Change sensitivity of the mouse
+defaults write -g com.apple.mouse.scrolling -float 2.0
+defaults write -g com.apple.mouse.scaling -float 4.0
 
 ############################################################################
 #                                   Dock                                   #
@@ -105,3 +109,4 @@ defaults write "Apple Global Domain" AppleInterfaceStyleSwitchesAutomatically -i
 ############################################################################
 killall SystemUIServer
 killall Dock
+killall cfprefsd
