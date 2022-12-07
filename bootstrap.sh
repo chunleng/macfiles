@@ -61,6 +61,11 @@ defaults write -g AppleKeyboardUIMode -int 2
 defaults write -g com.apple.mouse.scrolling -float 2.0
 defaults write -g com.apple.mouse.scaling -float 4.0
 
+# Change Color Filter
+defaults write com.apple.mediaaccessibility MADisplayFilterRedColorCorrectionIntensity -float 0.5
+defaults write com.apple.mediaaccessibility __Color__-MADisplayFilterCategoryEnabled -int 1
+defaults write com.apple.mediaaccessibility __Color__-MADisplayFilterType -int 2
+
 ############################################################################
 #                                   Dock                                   #
 ############################################################################
