@@ -108,6 +108,11 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write "Apple Global Domain" AppleInterfaceStyle -string Dark
 defaults write "Apple Global Domain" AppleInterfaceStyleSwitchesAutomatically -int 0
 
+############################################################################
+#                              Key Layout                                  #
+############################################################################
+
+sudo cp "./Custom Dvorak.keylayout" "/Library/Keyboard Layouts/"
 
 ############################################################################
 #                                Restart                                   #
