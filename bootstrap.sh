@@ -109,6 +109,13 @@ defaults write "Apple Global Domain" AppleInterfaceStyle -string Dark
 defaults write "Apple Global Domain" AppleInterfaceStyleSwitchesAutomatically -int 0
 
 ############################################################################
+#                               Spotlight                                  #
+############################################################################
+
+sudo mdutil -a -i off
+defaults delete com.apple.Spotlight "NSStatusItem Visible Item-0"
+
+############################################################################
 #                              Key Layout                                  #
 ############################################################################
 
