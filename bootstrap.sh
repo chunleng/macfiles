@@ -83,6 +83,14 @@ defaults write com.apple.dock autohide -int 1
 defaults write com.apple.dock "wvous-br-corner" -int 1
 defaults write com.apple.dock "wvous-br-modifier" -int 1048576
 
+# Reduce Animation
+defaults write com.apple.Accessibility ReduceMotion -bool true
+defaults write com.apple.universalaccess reduceMotion -bool true
+
+# Reduce Transparency
+defaults write com.apple.Accessibility EnhancedBackgroundContrastEnabled -bool true
+defaults write com.apple.universalaccess reduceTransparency -bool true
+
 ############################################################################
 #                             Navigation Menu                              #
 ############################################################################
